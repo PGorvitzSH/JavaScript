@@ -36,6 +36,17 @@ Write commands to do following:
 
 2. How do you round the number 7.25, to the nearest integer?
 
+    currnum = 5.49999999999999955 ;
+
+    if (currnum % 1 >= 0.5) {
+
+      console.log (currnum - currnum % 1 + 1) ;
+    }
+    else {
+
+      console.log (currnum - currnum % 1) ;
+    }
+
 3. Create a array called `colors` with the strings red, green and blue inside.
 
 4. How can you find the length of the string you just created?
@@ -54,9 +65,17 @@ For example:
 
 6. If `x` equals 7, and the only other statement is `x = x % 3`, what would be the new value of `x`?
 
+   let x = 7 ;
+   x = x % 3 ;
+   console.log (x) ;
+   1
+
 7. Write a program to answer the following questions:
 * Can you store multiple types in an array? Numbers and strings?
 * Can you compare inifities? (Not in Eyad's world) - does 6/0 == 10/0? How can you test this?
+
+  6 / 0 == -6 / -0 == Infinity == Number.POSITIVE_INFINITY
+  -6 / 0 == 6 / -0 == -6 / 0 == Number.NEGATIVE_INFINITY
 
 ### Step 3: **Some freeCodeCamp challenges (10 hours):**
 
