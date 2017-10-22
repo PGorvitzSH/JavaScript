@@ -53,9 +53,9 @@ A "variable" is a place where you can store information, such as a string, or a 
 Variables are "declared" using the `var`, `let` or `const` keyword:
 
 ```js
-var x;
-let foo;
-const bar;
+var x; -- covered
+let foo; -- covered
+const bar; -- covered, without practicing
 ```
 
 ### let and const
@@ -63,19 +63,19 @@ const bar;
 - read about [const](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Statements/const)
 - [let vs const] (http://wesbos.com/let-vs-const/) 
 
-Here, we say: "declare variable x and initialize it with the integer (number) 5".
+Here, we say: "declare variable x and initialize it with the integer (number) 5". -- used the word 'declare' without covering this vocabulary deliberately
 
 ```js
-let foo;  // declare variable `foo`
+let foo;  // declare variable `foo` -- used in code
 ```
 
 ```js
-let foo = 6; // declare and assign a variable at the same time
+let foo = 6; // declare and assign a variable at the same time -- covered explicitly
 ```
 
 You can also assign a value to an existing variable:
 ```js
-foo = 4;  // change variable `foo`
+foo = 4;  // change variable `foo` -- used in code
 ```
 
 
@@ -83,15 +83,16 @@ foo = 4;  // change variable `foo`
 
 All variables have a type. In our example above, the variable `x` is a `number`. JavaScript supports the following types:
 
-* `string`, e.g. "HackYourFuture"
-* `number`, e.g. 5, or 10.6
-* `boolean`, e.g. `true` or `false`
-* `array`\*, e.g. `[1, 2, 3]` or `['what', 'is', 'your', 'name']`
-* `object`, e.g. `{name: 'John', age: 24}`, or the special object `null`
-* `function`, e.g. `function () { return 4; }`
-* `symbol`
+* `string`, e.g. "HackYourFuture" -- covered
+* `number`, e.g. 5, or 10.6 -- covered
+* `boolean`, e.g. `true` or `false` -- covered briefly
+* `array`\*, e.g. `[1, 2, 3]` or `['what', 'is', 'your', 'name']` -- started; took some time; not covered completely
+* `object`, e.g. `{name: 'John', age: 24}`, or the special object `null` -- brought up; not explore, except in the context of Array
+* `function`, e.g. `function () { return 4; }` ; brought up, mentioned in some contexts; used -- not discussed in detail
+* `symbol` -- not mentioned
 
-In addition, a variable may be `undefined`. This is also a special type.
+In addition, a variable may be `undefined`. This is also a special type. -- mentioned, and discussed at a certain level
+ -- also, mentioned null.
 
 To get the type of a variable, use the following code:
 
@@ -100,6 +101,8 @@ let x = 5;
 let typeOfX = typeof x; // -> 'number'
 ```
 
+-- covered
+
 Note that I've put an asterisk behind 'array'. That is because in JavaScript, array is a special kind of object:
 
 ```js
@@ -107,11 +110,15 @@ let arr = [1, 2, 3];
 let typeOfArr = typeof arr; // -> 'object'
 ```
 
+-- showed that this is the case
+
 However, in our communication, we will call these variables arrays.
 
 ### Null & undefined
 
 The values `null` and `undefined` are very similar in JavaScript, but they behave a bit differently. The difference is that `null` always has type "object", and `undefined` always has type "undefined".
+
+-- discussed undefined type and value; not so much null, but mentioned it.  null is not of type Object in JavaScritp.  It is intended to be of type null.
 
 Whenever you declare a variable, but you don't set a value, the variable will become `undefined`. JavaScript will never make a variable `null` unless you explicitly program it.
 
@@ -120,12 +127,14 @@ let x;
 console.log(typeof x); // -> 'undefined'
 ```
 
+-- shown, maybe discussed a bit
 
-### Typeof
+
+### Typeof -- covered -- though to get type -- eg. to distinguish between Objects, Arrays, etc. -- may need some other things 
 
 You can use `typeof` to get the type of a certain variable as you have seen in the above section 'Variable types'. As you can see in the following examples it returns the type of data that you have stored in your variable. 
 
-## Strings
+## Strings -- covered but not in terms of length -- or other object properties 
 
 In JavaScript you can store a series of characters inside a variable, you then call this a string. You can store all sorts of characters (text/numbers, spaces or phrases) in strings. By using the `''` you define that something is a string. You can also use `""` to create a string. Both are fine as long as you are consistent (just make a choice on which one you prefer and stick to it).
 
