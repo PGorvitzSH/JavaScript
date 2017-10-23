@@ -163,7 +163,7 @@ baz.length; //-> 11
 
 ## Numbers
 
-All numbers in JavaScript are considered numbers with or without decimal
+All numbers in JavaScript are considered numbers with or without decimal -- briefly mentioned
 
 ```js
 let quux = 42;    
@@ -175,7 +175,7 @@ typeof quuux //-> 'number'
 ```
 
 
-## Arrays
+## Arrays -- covered a substantial portion of this
 
 Variables that are arrays contain a list of things, instead of just one thing. What's inside the array, we typically call "elements". So, the array `[1, 2, 3]` has three elements. The array `[]` has no elements and is therefore empty. The number of elements in an array is called its "length".
 
@@ -192,13 +192,15 @@ The number `0` is the "index of the first element of array `arr`". Conversely, t
 
 Instead of a number, you can also use a variable to access elements in an array, *as long as this variable is a number*:
 
+-- did not cover this
+
 ```js
 let arr = ['john', 'jane', 'jack'];
 let a = 1;
 console.log(arr[a]); // -> jane
 ```
 
-If the index you use is not an integer (a whole number), or if it's less than `0` or if it's greater than or equal to the array's length, you will get back `undefined`.
+If the index you use is not an integer (a whole number), or if it's less than `0` or if it's greater than or equal to the array's length, you will get back `undefined`. -- did not cover this
 
 More about [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -209,8 +211,8 @@ A single equals sign (=) is used to assign a value to a variable.
 A triple equals sign (===) is used to compare two values (see Equality Operators).
 
 #### Equality operators
-* Equality `==`
-* Inequality `!=`
+* Equality `==` -- covered this
+* Inequality `!=` -- mentioned this once
 * Identity / strict equality `===`
 * Non-identity / strict inequality `!==`
 
@@ -286,4 +288,5 @@ x += 1;
 x = x + 1;
 ```
 
+covered idea of what a variable is -- it represents a number, or String, or something...  I didn't use the word 'represents,' and I did not say 'in place of...'
 
